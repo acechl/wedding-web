@@ -1,0 +1,7 @@
+[
+  {"num":"01","service":"Web development","price":"1200$"},
+  {"num":"02","service":"Drawing","price":"600$"},
+  {"num":"03","service":"Custom work","price":"500$"},
+  {"num":"04","service":"Layout design","price":"800$"},
+  {"num":"05","service":"Security","price":"650$"}
+]

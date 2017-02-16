@@ -1,0 +1,764 @@
+body,html {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+.wedding-total{
+    width: 100%;
+    height: 100%;
+}
+.wedding {
+    width: 100%;
+    height: 100%;
+}
+.home-page {
+    position: absolute;
+    top: 0px;
+    width: 93%;
+}
+.wedding .first-page,
+.wedding .second-page,
+.wedding .third-page,
+.wedding .forth-page {
+    position: absolute;
+    top: 0px;
+    width: 95%;
+    padding-top: 68px;
+}
+.first-page {
+    left: 100%;
+}
+.second-page {
+    left: 200%;
+}
+.third-page {
+    left: 300%;
+}
+.forth-page {
+    left: 400%;
+}
+.go-page-home {
+    position: fixed;
+    transform: translateY(-58px);
+}
+/*首页 begin*/
+.home-page {
+    background: url("../img/colors/wedding/images/bg-wedding.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    padding: 0.3rem 0rem 0rem 0rem;
+}
+/*首页主人家 部分 begin*/
+.home-page {
+    /*float: left;*/
+}
+.home-page .host {
+    text-align: center;
+}
+.home-page .host img{
+    width: 3.5rem;
+}
+.home-page .host p {
+    font-size: 30px;
+    color: #55200e;
+}
+.home-page .function ul {
+    width: 100%;
+}
+.home-page .function li {
+    float: left;
+    text-align: center;
+    width: 30%;
+    border-radius: 50%;
+    display: inline-block;
+    background: url("../img/colors/wedding/images/trans_black.png");
+    margin-right: 2.5%;
+    margin-top: 4%;
+}
+.home-page .function li:nth-child(3n-2){
+    margin-left: 2.5%;
+}
+.home-page .function li img {
+    margin-top: 0.3rem;
+    width: 50%;
+}
+.home-page .function li p {
+    font-size: 12px;
+    color: #55200e;
+    margin-top: -10px;
+}
+/*首页部分 end*/
+/*第一子页 about us 部分 begin*/
+.first-page {
+    background-color: #edab4b;
+    padding: 0 0.2rem;
+    padding-bottom: 1rem;
+}
+.first-page .img img {
+    margin: 0 3%;
+    width: 94%;
+    border: 5px solid #e5e5e5;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.first-page .content .title h4 {
+    margin-left: 3%;
+    font-size: 28px;
+    color: #55200e;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.first-page .content .title div {
+    margin: 0 3%;
+    width: 94%;
+    background-color: #c53238;
+    border-bottom: 2px solid #8e262c;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    height: 35px;
+    line-height:35px;
+    border-radius: 3px;
+}
+.first-page .content h4{
+    font-size: 22px;
+    height: 50px;
+    line-height: 50px;
+    color: #5e5e5e;
+}.first-page .content .imagination,
+ .first-page .content .listing,
+ .first-page .content .detailed,
+ .first-page .content .toggle,
+ .first-page .content .flexible,
+ .first-page .content .buttons {
+    margin: 0 3%;
+ }
+.first-page .content .imagination p {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #5e5e5e;
+    line-height: 20px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.first-page .content .listing li {
+    margin-left: 5px;
+    line-height: 30px;
+    border-left: 2px solid #eee;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+.first-page .content .detailed li,
+.first-page .content .toggle .text-lists li,
+.first-page .content .flexible .list li,
+.third-page .categories ul li,
+.forth-page .square-title ul li,
+.first-page .flexible .tab-content .list li {
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 0.15rem 0;
+    padding-left: 2%;
+    border-radius: 5px;
+    font-size: 14px;
+    background: url("../img/colors/wedding/images/bullet_checked.png") no-repeat #edab4b;
+    background-origin: content-box;
+}
+.first-page .content .detailed li a ,
+.first-page .content .toggle .text-lists li a,
+.first-page .content .flexible .list li a,
+.third-page .categories  ul li a,
+.forth-page .square-title ul li a {
+    color: #925e03;
+    margin-left: 9%;
+}
+.first-page .content .toggle h5 {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.first-page .content .toggle  h5 a {
+    color: #555;
+    margin-left: 3%;
+    margin-right: 3%
+}
+.first-page .content .toggle .text-title,
+.first-page .content .toggle .text-lists {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ececec;
+}
+.first-page .content .toggle h5 a {
+    width: 93%;
+    display: inline-block;
+}
+.first-page .content .toggle h5 span {
+    float: right;
+    width: 22px;
+    height: 22px;
+    background-origin: content-box;
+    margin-top: 9px;
+    background: url("../img/colors/wedding/images/toggle.png") no-repeat 0 -22px;
+}
+.first-page .content .toggle .text-title p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: none;
+}
+.first-page .content .toggle .text-lists ul {
+    display: none;
+}
+.first-page .content .toggle .text-lists li {
+    margin-left: 3%;
+    margin-right:3%;
+    width: 92%;
+}
+.first-page .content .flexible h4 {
+    margin-left: 3%;
+    margin-right: 3%;
+    width: 93%;
+}
+.first-page .content .flexible>ul:nth-child(2) {
+    width: 100%;
+}
+.first-page .content .flexible>ul:nth-child(2)>li{
+    float: left;
+    font-size: 18px;
+    width: 30.6%;
+    margin-left: 3%;
+    text-align: center;
+    border: 1px solid #ececec;
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+.first-page .content .flexible>ul:nth-child(2)>li a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+}
+.first-page .content .flexible>ul:nth-child(2)>li:first-child {
+    margin-left: 0px;
+    color: #555;
+}
+.first-page .content .flexible>ul:nth-child(2)>.active {
+    border-bottom: 1px solid #fff;
+}
+.first-page .content .flexible>ul:nth-child(2)>.active a {
+    color: #925e03;
+}
+.first-page .content .flexible>ul:nth-child(3)>.active {
+    display: block;
+}
+.first-page .content .flexible>ul:nth-child(3)>li {
+    font-size: 14px;
+    display: none;
+    border: 1px solid #ececec;
+    border-radius: 0 0 5px 5px;
+    margin-top: -1px;
+    padding-bottom: 30px;
+}
+.first-page .content .flexible>ul:nth-child(3) h6 {
+    font-size: 20px;
+    color: #5e5e5e;
+    font-weight: 400;
+    margin: 0 3%;
+    height: 70px;
+    line-height: 70px;
+}
+.first-page .content .flexible>ul:nth-child(3) p {
+    margin: 0 3%;
+    line-height: 20px;
+}
+.first-page .content .buttons {
+    margin: 0 3%;
+    width: 93%;
+}
+.first-page .content .buttons button {
+    margin-right: 2%;
+    width: 46%;
+    font-size: 18px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+.first-page .content .buttons button:first-child {
+    background-color: #edab4b;
+}
+.first-page .content .buttons button:nth-child(2) {
+    background-color: #5a80ed;
+}
+.first-page .content .buttons button:nth-child(3) {
+    background-color: #458724;
+}
+.first-page .content .buttons button:nth-child(4) {
+    background-color: #ed3dde;
+}
+.first-page .content .buttons button:nth-child(5) {
+    background-color: #ed1720;
+}
+.first-page .content .buttons button:nth-child(6) {
+    background-color: #106e47;
+}
+.first-page .content .buttons button:nth-child(2n) {
+    margin-right: 0px;
+}
+.first-page .content .buttons button:last-child {
+    width: 98%;
+    margin: 0px;
+    background-color: #29aae3;
+}
+.first-page .content .flexible ul .list li {
+    margin-left: 3%;
+    width: 92%;
+}
+/*第一子页 about us 部分 end*/
+/*第一子页 service部分 begin*/
+.second-page {
+    background-color: #edab4b;
+    padding: 0 0.2rem;
+    padding-bottom: 1rem;
+
+}
+.go-page-home {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0px;
+    background-color: #55200e;
+    padding-top: 8px;
+    left: 0px;
+    z-index: 1;
+}
+.go-page-home span {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+.go-page-home span:first-child{
+    float: left;
+    background: #edab4b url("../img/images/icons/home.png") no-repeat;
+    background-size: 30px 30px;
+    background-origin: content-box;
+    margin-left: 0.2rem;
+}
+.go-page-home span:nth-child(2){
+    background: #edab4b url("../img/images/icons/contact.png") no-repeat;
+    background-size: 30px 30px;
+    background-origin: content-box;
+    float: right;
+    margin-right: 0.2rem;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    background-origin: content-box;
+    padding-bottom: 0.5rem;
+}
+.second-page .content .title {
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.second-page .content .title>h4{
+    height: 60px;
+    line-height: 60px;
+    color: #55200e;
+    font-size: 30px;
+    font-weight: 400;
+    border-bottom: 1px solid #e5e5e5;
+}
+.second-page .content .title p {
+    padding: 10px 0;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 16px;
+}
+.second-page .content .main-serve>h4 {
+    font-size: 30px;
+    margin-left: 0.2rem;
+    color: #555;
+}
+.second-page .content ul li {
+    height: 2rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.second-page .content ul li>a {
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #edab4b;
+    border-radius: 50%;
+    margin-top: 0.25rem;
+    margin-left: 0.25rem;
+    text-align: center;
+}
+.second-page .content ul li>a img {
+    width: 80%;
+    margin-top: 10%;
+}
+.second-page .content ul li div {
+   overflow: hidden;
+    padding-top: 0.5rem;
+    margin-left: 0.3rem;
+    padding-left: 0.4rem;
+}
+.second-page .content ul li h4 {
+    font-size: 18px;
+    color: #666;
+    line-height: 30px;
+
+}
+.second-page .content ul li p {
+    font-size: 12px;
+    color: #777;
+    line-height: 18px;
+}
+.second-page .content .title ul li>a{
+}
+.second-page .price h3 {
+    font-size: 20px;
+    color: #555;
+    font-weight: 400;
+    line-height: 40px;
+    margin-left: 0.2rem;
+}
+.second-page .price table {
+    margin-left: 3%;
+    font-size: 14px;
+    border-radius: 3px/3px;
+    width: 93%;
+
+}
+.second-page .price table thead {
+    background-color: #edab4b;
+    color: #fff;
+    font-weight: 400;
+    width: 100%;
+    height: 25 px;
+    line-height: 25px;
+}
+.second-page .price table tr {
+    padding-left: 10px;
+}
+.second-page .price table tbody {
+    background-color: #eee;
+    width: 100%;
+}
+.second-page .price table tbody tr {
+    border-bottom: 1px solid #fff;
+    height: 25px;
+    line-height: 25px;
+}
+.second-page .price table .second {
+    width: 25%;
+    display: block;
+    margin-left: 0.2rem;
+}
+.second-page .price table tbody .second {
+    width: 52%;
+}
+.second-page .price table tbody .third {
+    width:30%;
+}
+.go-top {
+    text-align: center;
+    margin: 10px;
+}
+.go-top a {
+    background: #edab4b url("../img/images/icons/top.png") no-repeat;
+    background-size: 40px 40px;
+    padding-top: 0px;
+    padding-left: 0px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-origin: content-box;
+}
+.space {
+    width: 100%;
+    height: 68px;
+    background-color:#edab4b;
+}
+/*第二子页 services部分 end*/
+/*第三子页 blog部分  begin*/
+.third-page {
+    background-color: #edab4b;
+    padding: 0 0.2rem;
+    padding-bottom: 1rem;
+    width: 93%;
+}
+.third-page .content>.title {
+    color: #55200e;
+    font-size: 30px;
+    margin-top: 16px;
+    margin-left: 3% ;
+}
+.third-page .content .categories p {
+    margin: 0 3%;
+    width: 93%;
+    height: 45px;
+    border-radius: 7px;
+    margin-top: 3%;
+}
+.third-page .content .categories p a {
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    line-height: 45px;
+    margin-left: 10px;
+}
+.third-page .content .categories p span{
+    width: 22px;
+    height: 22px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 10px;
+    background: url("../img/colors/wedding/images/toggle_blog.png") 0 -22px;
+}
+.third-page .content .categories {
+    background-color: #925e03;
+    border-radius: 7px;
+    margin: 0 3%;
+    width: 93%;
+}
+.third-page .content .categories ul {
+    display: none;
+    padding-bottom: 20px;
+}
+.third-page .content .categories ul li {
+    margin: 0 2%;
+    width: 93%;
+    margin-top: 10px;
+}
+.third-page .content .categories ul li a {
+    margin-left: 30px;
+    color: #fff;
+}
+.third-page .content .detail {
+    margin: 0 3%;
+    width: 93%;
+}
+.third-page .content .detail ul li {
+    background-color: #925e03;
+    height: 80px;
+    margin-top: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+.third-page .content .detail ul li .data {
+    color: #fff;
+    width: 25%;
+    font-size: 20px;
+    float: left;
+}
+.third-page .content .detail ul li .data span{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+.third-page .content .detail ul li .data span:first-child {
+    font-size: 45px;
+    height: 40px;
+}
+.third-page .content .detail ul li .data span:nth-child(2){
+    font-size: 25px;
+}
+.third-page .content .detail ul li .info {
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+}
+.third-page .content .detail ul li .info .posted {
+    height: 30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.third-page .content .detail ul li .info .commend {
+    background: url("../img/colors/wedding/images/comments.png") no-repeat left center;
+    padding-left: 30px;
+}
+.third-page .content .detail ul li .info .more {
+    background: url("../img/colors/wedding/images/bullet_cross_white.png") no-repeat left center;
+    padding-left: 20px;
+}
+.third-page .content .detail ul li .msg {
+    color: #925e03;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 0px;
+    width: 60%;
+    font-size: 14px;
+    left: 25%;
+    height: 65px;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.third-page .content .detail ul li .right {
+    background: url("../img/colors/wedding/images/bullet_cross_big_close.png") no-repeat left center;
+    width: 10%;
+    height: 80px;
+    float: right;
+}
+.third-page .content .moreDetail {
+    color: #fff;
+    margin: 0 3%;
+    width: 93%;
+    background-color: #b2b2b2;
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+}
+/*第三子页 blog 部分 end*/
+/*第四子页  portfolio begin*/
+.forth-page {
+    background-color: #edab4b;
+    padding: 0 0.2rem;
+    padding-bottom: 1rem;
+}
+.forth-page .content >.title {
+    margin: 0 3%;
+    width: 93%;
+    font-size: 30px;
+    color: #55200e;
+    margin-top: 10px;
+}
+.forth-page .content .square-title {
+    border: 1px solid #ececec;
+    margin: 0 3%;
+    width: 93%;
+    border-radius: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.forth-page .content .square-title h4,
+.forth-page .content .round h4{
+    color: #636363;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+}
+.forth-page .content .square-title h4>span {
+    float: right;
+    background: url("../img/colors/wedding/images/toggle.png");
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-position: 0px -22px;
+    margin-right: 10px;
+    margin-top: 9px;
+}
+.forth-page .content .square-title ul {
+    margin-top: 10px;
+    display: none;
+}
+.forth-page .content .square {
+    margin-top: 10px;
+}
+.forth-page .content .square-content ul li,
+.forth-page .content .round-content ul li{
+    border: 1px solid #ececec;
+    border-radius: 5px;
+    margin: 0 3%;
+    width: 88%;
+    padding: 3%;
+    margin-top: 10px;
+}
+.forth-page .content .square-content img,
+.forth-page .content .round-content img {
+    float: left;
+    width: 33%;
+}
+.forth-page .content .s-content {
+    overflow: hidden;
+    padding-left: 15px;
+}
+.forth-page .content .s-content h5 {
+    color: #925e03;
+    font-size: 16px;
+    line-height: 20px;
+}
+.forth-page .content .s-content p:nth-child(2){
+    color: #5e5e5e;
+    font-size: 12px;
+    line-height: 20px;
+}
+.forth-page .content .s-content p:last-child {
+    height: 20px;
+}
+.forth-page .content .s-content p:last-child a {
+    color: #edab4b;
+    font-size: 12px;
+    line-height: 20px;
+    display: block;
+}
+.forth-page .content .s-content p:last-child span {
+    width: 8px;
+    height: 8px;
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+    background: url("../img/colors/wedding/images/bullet_cross.png") no-repeat left center;
+}
+.forth-page .content .round h4 {
+    font-size: 22px;
+    margin: 0 3%;
+    width: 93%;
+    margin-top: 10px;
+}
+.forth-page .content .round-content img {
+    border-radius: 50%;
+}
+.img-detail .top {
+    background-color: #0d0d0d;
+    color: #fff;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 50px;
+}
+.img-detail {
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: 0;
+    left: 0;
+}
+.img-detail .addImg {
+    background-color: #000;
+    padding: 40% 0px;
+    width: 100%;
+}
+.img-detail img {
+    margin: 0 3%;
+    width: 94%;
+}
+.img-detail .bottom {
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+/*第四子页  portfolio end*/

@@ -1,0 +1,11 @@
+[
+  {"img":"img/images/icons/about.png","name":"About us"},
+  {"img":"img/images/icons/services.png","name":"Services"},
+  {"img":"img/images/icons/blog.png","name":"Blog"},
+  {"img":"img/images/icons/docs.png","name":"Portfolio"},
+  {"img":"img/images/icons/photos.png","name":"Callery"},
+  {"img":"img/images/icons/videos.png","name":"Videos"},
+  {"img":"img/images/icons/clients.png","name":"Clierts"},
+  {"img":"img/images/icons/twitter.png","name":"Twitter"},
+  {"img":"img/images/icons/contact.png","name":"Contact"}
+]

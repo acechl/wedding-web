@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>婚纱</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/others/jquery-1.10.1.min.js"></script>
+    <!--<script src="js/others/zepto.min.js"></script>-->
+    <script src="js/others/template-native.js"></script>
+    <script src="js/self/rem.js"></script>
+    <script src="js/self/index.js"></script>
+</head>
+<body>
+<div class="wedding-total">
+    <div class="go-page-home clearfix" >
+        <span></span>
+        <span></span>
+    </div>
+    <div class="wedding clearfix">
+        <!-- 首页部分 begin-->
+        <div class="home-page page fl clearfix">
+            <div class="host"></div>
+            <!-- 主人家的引擎模板-->
+            <script type="text/template" id="host">
+                <%for(var i=0;i< items.length;i++){%>
+                <img src="<%=items[i].img%>" alt=""/>
+                <p><%= items[i].name%></p>
+                <%}%>
+            </script>
+            <div class="function">
+                <ul class="clearfix"></ul>
+            </div>
+            <!-- 功能导航模板-->
+            <script type="text/template" id="function">
+                <% for(var i=0;i< items.length;i++){%>
+                <li id="fun<%=(i+1)%>" class="home-function">
+                    <a href="javascript:;">
+                        <img src="<%= items[i].img%>" alt=""/>
+                        <p><%= items[i].name%></p>
+                    </a>
+                </li>
+
+                <%}%>
+            </script>
+        </div>
+        <!-- 首页部分  end-->
+        <!-- 第一子页 about us 部分 begin-->
+        <div class="first-page page fl clearfix">
+            <div class="content">
+                <div class="title" id="first-top">
+                    <h4>About us</h4>
+                    <a href="javascript:;" class="img"></a>
+                    <div>Image title</div>
+                </div>
+                <div class="imagination">
+                    <h4>Imagination is our power</h4>
+                    <p>Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service.
+                        <a href="javascript:;">-Steve Jobs</a></p>
+                </div>
+                <div class="listing">
+                    <h4>Just a simple listing</h4>
+                    <ul>
+                        <li>Proin dignissim risus ut quam aliquam dignissim.</li>
+                        <li>Nunc erat eros, cursus et commodo vitae, pulvinar ac libero.</li>
+                        <li>In erat elit, bibendum vitae commodo vitae, bibendum non justo.</li>
+                    </ul>
+                </div>
+                <div class="detailed">
+                    <h4>A more detailed listing</h4>
+                    <ul>
+                        <li><a href="javascript:;">Proin dignissim risus</a></li>
+                        <li><a href="javascript:;">Nunc erat eros, cursus et</a></li>
+                        <li><a href="javascript:;">In erat elit, bibendum</a></li>
+                    </ul>
+                </div>
+                <div class="toggle">
+                    <h4>Toggle styles</h4>
+                    <div class="text-title">
+                        <h5 class="22"><a href="javascript:;">toggle with text <span></span></a></h5>
+                        <p>Lorem ipsum<a href="javascript:;">dolor sit amet</a>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <div class="text-lists">
+                        <h5 class="11"><a href="javascript:;">toggle with lists <span></span></a></h5>
+                        <ul>
+                            <li><a href="javascript:;">Consectetur adipisicing elit sed</a></li>
+                            <li><a href="javascript:;">Sed do eiusmod tempor incididunt</a></li>
+                            <li><a href="javascript:;">Ut enim ad minim veniam</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flexible">
+                    <h4>Some flexible<span> &nbsp;tabs</span></h4>
+                    <ul class="clearfix tab-nav">
+                        <li class="active" id="text"><a href="javascript:;">Text tab</a></li>
+                        <li id="list"><a href="javascript:;">Listing tab</a></li>
+                        <li id="quote"><a href="javascript:;">Quote tab</a></li>
+                    </ul>
+                    <ul class="tab-content">
+                        <li class="active text">
+                            <h6>Simple text title</h6>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </p>
+                        </li>
+                        <li class="list">
+                            <h6>Listing title</h6>
+                            <ul class="clearfix">
+                                <li><a href="javascript:;">Consectetur adipisicing elit sed</a></li>
+                                <li><a href="javascript:;">Sed do eiusmod tempor incididunt</a></li>
+                                <li><a href="javascript:;">Ut enim ad minim veniam</a></li>
+                            </ul>
+                        </li>
+                        <li class="quote">
+                            <h6>Quote title</h6>
+                            <p>Design is the fundamental soul of a human-made creation that ends up expressing itself in successive outer layers of the product or service.
+                                <a href="javascript:;">-Steve Jobs</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <button>Button 1/2</button>
+                    <button>Button 1/2</button>
+                    <button>Button 1/2</button>
+                    <button>Button 1/2</button>
+                    <button>Button 1/2</button>
+                    <button>Button 1/2</button>
+                    <button>Full width button</button>
+                </div>
+                <div class="go-top"><a href="#first-top"></a></div>
+            </div>
+
+        </div>
+        <!-- 标题图片的引擎模板-->
+        <script type="text/template" id="img">
+            <img src="<%=items[0].img%>" alt=""/>
+        </script>
+        <!-- 第一子页 about us 部分 end-->
+        <!--  第二子页 services的子页 begin-->
+        <div class="second-page page fl clearfix">
+            <div class="content">
+                <div class="title" id="second-top">
+                    <h4>Our motto</h4>
+                    <p>Design is the fundamental soul of a human-made creation that ends up expressing itself in successive
+                        outer layers of the product or service. <span>-Steves Jobs</span></p>
+                </div>
+                <div class="main-serve">
+                    <h4>Our main services</h4>
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><img src="img/images/icons/services.png" alt=""/></a>
+
+                            <div>
+                                <h4>Web development</h4>
+
+                                <p>Lorem ipsum dolor sit <a href=""> adipisicing elit, </a>amet consectetur <strong>sed do
+                                    eiusmod</strong> tempor</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/images/icons/layout.png" alt=""/></a>
+
+                            <div>
+                                <h4>Layout design</h4>
+
+                                <p>Lorem ipsum dolor sit <a href=""> adipisicing elit, </a>amet consectetur <strong>sed do
+                                    eiusmod</strong> tempor</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/images/icons/pencil.png" alt=""/></a>
+
+                            <div>
+                                <h4>Drawing</h4>
+
+                                <p>Lorem ipsum dolor sit <a href=""> adipisicing elit, </a>amet consectetur <strong>sed do
+                                    eiusmod</strong> tempor</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/images/icons/code.png" alt=""/></a>
+
+                            <div>
+                                <h4>Programming</h4>
+
+                                <p>Lorem ipsum dolor sit <a href=""> adipisicing elit, </a>amet consectetur <strong>sed do
+                                    eiusmod</strong> tempor</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/images/icons/travel.png" alt=""/></a>
+
+                            <div>
+                                <h4>Custom work</h4>
+
+                                <p>Lorem ipsum dolor sit <a href=""> adipisicing elit, </a>amet consectetur <strong>sed do
+                                    eiusmod</strong> tempor</p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="javascript:;"><img src="img/images/icons/security.png" alt=""/></a>
+
+                            <div>
+                                <h4>Security</h4>
+
+                                <p>Lorem ipsum dolor sit <a href=""> adipisicing elit, </a>amet consectetur <strong>sed do
+                                    eiusmod</strong> tempor</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <h3>Price</h3>
+                    <table>
+                        <thead>
+                        <td class="first">Nr</td>
+                        <td class="second">Service</td>
+                        <td class="third">Price</td>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <script type="text/template" id="price">
+                    <% for(var i=0;i< items.length;i++) {%>
+                    <tr>
+                        <td class="first"><%=items[i].num%></td>
+                        <td class="second"><%=items[i].service%></td>
+                        <td class="third"><%=items[i].price%></td>
+                    </tr>
+                    <%}%>
+                </script>
+                <div class="go-top"><a href="#second-top"></a></div>
+            </div>
+        </div>
+        <!-- 第二子页 services的子页 end-->
+        <!-- 第三子页 blog begin-->
+        <div class="third-page page fl clearfix">
+            <div class="content">
+                <div class="title" id="third-top">Blog</div>
+                <div class="categories">
+                    <p class="title"><a href="javascript:;">blog categories</a><span></span></p>
+                    <ul>
+                        <li><a href="javascript:;">webdesign work</a></li>
+                        <li><a href="javascript:;">painted illustrations</a></li>
+                        <li><a href="javascript:;">programming and javascript</a></li>
+                    </ul>
+                </div>
+                <div class="detail">
+                    <ul></ul>
+                </div>
+                <!-- detail 的引擎模板-->
+                <script type="text/template" id="detail">
+                    <% for(var i=0;i< items.length;i++){%>
+                    <li class="clearfix">
+                        <div class="data left">
+                            <span><%= items[i].data%></span>
+                            <span><%= items[i].month%></span>
+                        </div>
+                        <div class="center info">
+                            <p class="posted"><%= items[i].post%></p>
+                            <p class="commend"><%= items[i].commends%></p>
+                            <p class="more">read more</p>
+                        </div>
+                        <div class="right change"></div>
+                        <div class="msg showing"><%= items[i].msg%></div>
+                    </li>
+                    <%}%>
+                </script>
+                <div class="moreDetail">Load more posts</div>
+                <div class="go-top"><a href="#third-top"></a></div>
+            </div>
+        </div>
+        <!-- 第三子页 blog end-->
+        <!-- 第四子页 portfolio begin -->
+        <div class="forth-page page fl">
+            <div class="forth-home">
+                <div class="content">
+                    <div class="title" id="forth-top">Portfolio</div>
+                    <div class="square">
+                        <div class="square-title">
+                            <h4 class="clearfix">protfolio categories <span></span></h4>
+                            <ul>
+                                <li><a href="javascript:;">webdesign work<span></span></a></li>
+                                <li><a href="javascript:;">painted illustrations<span></span></a></li>
+                                <li><a href="javascript:;">programming and javascript<span></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="square-content">
+                            <ul></ul>
+                        </div>
+                        <!-- square内容的引擎模板-->
+                        <script type = "text/template" id="portfolio">
+                            <% for(var i=0; i< items.length;i++){%>
+                            <li class="clearfix">
+                                <a href="javascript:;"><img src="<%=items[i].img%>" alt=""/></a>
+                                <div class="s-content">
+                                    <h5><%=items[i].title%></h5>
+                                    <p><%=items[i].detail%></p>
+                                    <p><a href="javascript:;"><span></span>view details</a></p>
+                                </div>
+                            </li>
+                            <%}%>
+                        </script>
+                    </div>
+                    <div class="round">
+                        <h4>protfolio categories</h4>
+                        <div class="round-content">
+                            <ul></ul>
+                        </div>
+                    </div>
+                    <div class="go-top"><a href="#forth-top"></a></div>
+                </div>
+            </div>
+        </div>
+        <!-- 第四子页 portfolio end -->
+    </div>
+    <div class="img-detail clearfix">
+        <div class="top">Webdesign work</div>
+        <div class="addImg">
+            <img src="" alt=""/>
+        </div>
+        <div class="bottom"></div>
+    </div>
+</div>
+
+
+</body>
+</html>
